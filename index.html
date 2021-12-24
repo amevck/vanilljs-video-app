@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video player App</title>
+    <link rel="stylesheet" href="./styles/app.css">
+</head>
+<body>
+
+    
+<!-- App container -->
+<div class="appContainer" id="appContainer">
+
+      
+    <div id="video-container">
+        <div class="thumbnail" id="thumbnail">
+        <a target="_blank" href="images/test_thumbnail.png">
+            <img src="images/test_thumbnail.png" alt="Forest" style="width:150px">
+          </a>
+        </div>
+        <!-- Video -->
+        <video id="videoplayer" ref="video" controls width="100%" height="100%">
+          <source src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4" type="video/mp4">
+
+        </video>
+        <!-- Video Controls -->
+        <div id="video-controls">
+          <div id="seek-bar" style="position: relative;">
+          <input  id="seek-bar-input" type="range"  value="0" style="width: 100%">
+        </div>
+        </div>
+      </div>
+</div>
+
+<script src="js/app.js" defer></script>
+</body>
+</html>
